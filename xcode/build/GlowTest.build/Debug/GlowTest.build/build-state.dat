@@ -3,10 +3,11 @@ v5
 r1
 cCheck dependencies
 cProcessInfoPlistFile /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/Info.plist Info.plist
-cCpResource blur.glsl ./build/Debug/GlowTest.app/Contents/Resources/blur.glsl
-cCpResource vert.glsl ./build/Debug/GlowTest.app/Contents/Resources/vert.glsl
-cCpResource CinderApp.icns ./build/Debug/GlowTest.app/Contents/Resources/CinderApp.icns
 cCpResource frag.glsl ./build/Debug/GlowTest.app/Contents/Resources/frag.glsl
+cCpResource CinderApp.icns ./build/Debug/GlowTest.app/Contents/Resources/CinderApp.icns
+cCpResource blur.glsl ./build/Debug/GlowTest.app/Contents/Resources/blur.glsl
+cCpResource multi.glsl ./build/Debug/GlowTest.app/Contents/Resources/multi.glsl
+cCpResource vert.glsl ./build/Debug/GlowTest.app/Contents/Resources/vert.glsl
 cProcessPCH++ /var/folders/rx/5920lwf5777bzm51lrsn28900000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlowTest_Prefix-ewhvirggkucgyqblnktzoabzzhyn/GlowTest_Prefix.pch.pth GlowTest_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC ./build/GlowTest.build/Debug/GlowTest.build/Objects-normal/i386/GlowTestApp.o /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/../src/GlowTestApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/MacOS/GlowTest normal i386
@@ -2543,12 +2544,12 @@ t1336782579
 s24149
 
 N/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/../src/GlowTestApp.cpp
-c0000000050A9D5A50000000000000CF9
-t1353307557
-s3321
+c0000000050A9DB5C000000000000115D
+t1353309020
+s4445
 
 N/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app
-t1353307548
+t1353309023
 s102
 
 N/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/Info.plist
@@ -2556,8 +2557,8 @@ t1353300211
 s1226
 
 N/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/MacOS/GlowTest
-t1353307548
-s7816712
+t1353309023
+s7820528
 
 N/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/PkgInfo
 t1353300211
@@ -2568,12 +2569,16 @@ t1353300211
 s114357
 
 N/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/Resources/blur.glsl
-t1353307546
-s1478
+t1353308229
+s1208
 
 N/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/Resources/frag.glsl
 t1353304497
 s125
+
+N/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/Resources/multi.glsl
+t1353308831
+s414
 
 N/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/Resources/vert.glsl
 t1353303149
@@ -2585,8 +2590,8 @@ t1353300211
 s131
 
 N/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/Objects-normal/i386/GlowTestApp.o
-t1353307548
-s456004
+t1353309023
+s459860
 
 N/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/CinderApp.icns
 c0000000050A9B687000000000001BEB5
@@ -2600,14 +2605,19 @@ s147
 i<Cocoa/Cocoa.h>
 
 N/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/blur.glsl
-c0000000050A9D5AD00000000000005FA
-t1353307565
-s1530
+c0000000050A9D84500000000000004B8
+t1353308229
+s1208
 
 N/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/frag.glsl
 c0000000050A9C76F000000000000007D
 t1353303919
 s125
+
+N/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/multi.glsl
+c0000000050A9DA9E000000000000019E
+t1353308830
+s414
 
 N/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/vert.glsl
 c0000000050A9C4330000000000000065
@@ -2628,11 +2638,11 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesb0fecb300d5ab641^ee3dcc300d5ab641^---0#1#0#--18"Check dependencies36"EDBF7D13-AC79-4706-BEE9-AD414C1D1146-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesdeaca52a135ab641^01dba52a135ab641^---0#1#0#--18"Check dependencies36"B0A15EFB-2103-4B63-88E1-C1DBB4CD72DE-
 
 CCompileC ./build/GlowTest.build/Debug/GlowTest.build/Objects-normal/i386/GlowTestApp.o /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/../src/GlowTestApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s375000368.834924
-e375000370.554824
+s375001821.420528
+e375001823.479530
 r1
 xCompileC
 x./build/GlowTest.build/Debug/GlowTest.build/Objects-normal/i386/GlowTestApp.o
@@ -2641,7 +2651,7 @@ xnormal
 xi386
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/../src/GlowTestApp.cpp95d8d5300d5ab641^9a098e320d5ab641^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/../src/GlowTestApp.cpp0000000000000000^2770"CompileC ./build/GlowTest.build/Debug/GlowTest.build/Objects-normal/i386/GlowTestApp.o ../src/GlowTestApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -g -Wno-sign-conversion -iquote /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/GlowTest-generated-files.hmap -I/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/GlowTest-own-target-headers.hmap -I/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/GlowTest-all-target-headers.hmap -iquote /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/GlowTest-project-headers.hmap -iquote../../../include -iquote../include -I/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/build/Debug/include -I../../../boost -I/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/DerivedSources/i386 -I/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/DerivedSources -F/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/build/Debug -include /var/folders/rx/5920lwf5777bzm51lrsn28900000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlowTest_Prefix-ewhvirggkucgyqblnktzoabzzhyn/GlowTest_Prefix.pch -MMD -MT dependencies -MF /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/Objects-normal/i386/GlowTestApp.d --serialize-diagnostics /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/Objects-normal/i386/GlowTestApp.dia -c /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/../src/GlowTestApp.cpp -o /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/Objects-normal/i386/GlowTestApp.o36"A3C39FAB-D13C-43E1-B358-8120AA57493F-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/../src/GlowTestApp.cpp21ca6bdd125ab641^9cc27adf125ab641^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/../src/GlowTestApp.cpp0000000000000000^2770"CompileC ./build/GlowTest.build/Debug/GlowTest.build/Objects-normal/i386/GlowTestApp.o ../src/GlowTestApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -g -Wno-sign-conversion -iquote /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/GlowTest-generated-files.hmap -I/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/GlowTest-own-target-headers.hmap -I/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/GlowTest-all-target-headers.hmap -iquote /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/GlowTest-project-headers.hmap -iquote../../../include -iquote../include -I/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/build/Debug/include -I../../../boost -I/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/DerivedSources/i386 -I/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/DerivedSources -F/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/build/Debug -include /var/folders/rx/5920lwf5777bzm51lrsn28900000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlowTest_Prefix-ewhvirggkucgyqblnktzoabzzhyn/GlowTest_Prefix.pch -MMD -MT dependencies -MF /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/Objects-normal/i386/GlowTestApp.d --serialize-diagnostics /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/Objects-normal/i386/GlowTestApp.dia -c /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/../src/GlowTestApp.cpp -o /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/Objects-normal/i386/GlowTestApp.o36"F5AFA77A-D9E0-42F6-89F5-5E53B6C88830-
 
 CCpResource CinderApp.icns ./build/Debug/GlowTest.app/Contents/Resources/CinderApp.icns
 s374993011.309617
@@ -2653,13 +2663,13 @@ x./build/Debug/GlowTest.app/Contents/Resources/CinderApp.icns
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy ./build/Debug/GlowTest.app/Contents/Resources/CinderApp.icns4c544f73f059b641^c3f24f73f059b641^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/Resources/CinderApp.icns000000000080d041^426"CpResource CinderApp.icns ./build/Debug/GlowTest.app/Contents/Resources/CinderApp.icns    cd /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/CinderApp.icns /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/Resources36"41047AA4-6290-4BB5-A317-74DF4E812750-
 
 CCpResource blur.glsl ./build/Debug/GlowTest.app/Contents/Resources/blur.glsl
-s375000368.817797
-e375000368.819768
+s375001029.622656
+e375001029.624618
 r1
 xCpResource
 xblur.glsl
 x./build/Debug/GlowTest.app/Contents/Resources/blur.glsl
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy ./build/Debug/GlowTest.app/Contents/Resources/blur.glslb56cd1300d5ab641^4914d2300d5ab641^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/Resources/blur.glsl0000000000000000^411"CpResource blur.glsl ./build/Debug/GlowTest.app/Contents/Resources/blur.glsl    cd /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/blur.glsl /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/Resources36"D98AC1AF-3998-4D5C-8783-F1A7622CA258-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy ./build/Debug/GlowTest.app/Contents/Resources/blur.glslcd749fc50f5ab641^7617a0c50f5ab641^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/Resources/blur.glsl0000000000000000^411"CpResource blur.glsl ./build/Debug/GlowTest.app/Contents/Resources/blur.glsl    cd /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/blur.glsl /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/Resources36"FC5A3873-5139-4C90-8A57-8F8DF3035D66-
 
 CCpResource frag.glsl ./build/Debug/GlowTest.app/Contents/Resources/frag.glsl
 s374997297.906759
@@ -2669,6 +2679,15 @@ xCpResource
 xfrag.glsl
 x./build/Debug/GlowTest.app/Contents/Resources/frag.glsl
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy ./build/Debug/GlowTest.app/Contents/Resources/frag.glsl6a31e831015ab641^e0d7e831015ab641^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/Resources/frag.glsl0000000000000000^411"CpResource frag.glsl ./build/Debug/GlowTest.app/Contents/Resources/frag.glsl    cd /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/frag.glsl /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/Resources36"5FF02581-1B14-49ED-8A0A-6964A7F0E0D2-
+
+CCpResource multi.glsl ./build/Debug/GlowTest.app/Contents/Resources/multi.glsl
+s375001631.481266
+e375001631.483219
+r1
+xCpResource
+xmulti.glsl
+x./build/Debug/GlowTest.app/Contents/Resources/multi.glsl
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy ./build/Debug/GlowTest.app/Contents/Resources/multi.glslb2487b1f125ab641^20ed7b1f125ab641^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/Resources/multi.glsl000000000080d041^414"CpResource multi.glsl ./build/Debug/GlowTest.app/Contents/Resources/multi.glsl    cd /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/multi.glsl /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/Resources36"28AE99CD-5D91-4E85-9DE2-8AE225A7FD04-
 
 CCpResource vert.glsl ./build/Debug/GlowTest.app/Contents/Resources/vert.glsl
 s374995949.595575
@@ -2680,14 +2699,14 @@ x./build/Debug/GlowTest.app/Contents/Resources/vert.glsl
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy ./build/Debug/GlowTest.app/Contents/Resources/vert.glslf08a98edfb59b641^cb4c99edfb59b641^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/Resources/vert.glsl0000000000000000^411"CpResource vert.glsl ./build/Debug/GlowTest.app/Contents/Resources/vert.glsl    cd /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/vert.glsl /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/Resources36"15D3A380-1526-4578-9CCC-2CDB523BE2A8-
 
 CLd /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/MacOS/GlowTest normal i386
-s375000370.561684
-e375000370.881311
+s375001823.486339
+e375001823.834258
 r1
 xLd
 x/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/MacOS/GlowTest
 xnormal
 xi386
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Link /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/MacOS/GlowTest8fdf8f320d5ab641^309ee1320d5ab641^---0#0#0#--1037"Ld ./build/Debug/GlowTest.app/Contents/MacOS/GlowTest normal i386    cd /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/build/Debug -F/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/build/Debug -filelist /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/Objects-normal/i386/GlowTest.LinkFileList -mmacosx-version-min=10.5 ../../..//lib/libcinder_d.a -lcurl -framework Cocoa -framework OpenGL -framework Carbon -framework CoreVideo -framework QTKit -framework QuickTime -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -o /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/MacOS/GlowTest36"1D868A0F-5CEC-4470-94DF-D88E97BD518A-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Link /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/MacOS/GlowTestb4947cdf125ab641^0c93d5df125ab641^---0#0#0#--1037"Ld ./build/Debug/GlowTest.app/Contents/MacOS/GlowTest normal i386    cd /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/build/Debug -F/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/build/Debug -filelist /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/Objects-normal/i386/GlowTest.LinkFileList -mmacosx-version-min=10.5 ../../..//lib/libcinder_d.a -lcurl -framework Cocoa -framework OpenGL -framework Carbon -framework CoreVideo -framework QTKit -framework QuickTime -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -o /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/MacOS/GlowTest36"B2C02126-8F7D-4D8F-9F75-413127AB3909-
 
 CProcessInfoPlistFile /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app/Contents/Info.plist Info.plist
 s374993011.298713
@@ -2715,10 +2734,10 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection30"Precompile GlowTest_Prefix.pchdb155273f059b641^448a5573f059b641^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/GlowTest_Prefix.pch0000000000000000^2784"ProcessPCH++ /var/folders/rx/5920lwf5777bzm51lrsn28900000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlowTest_Prefix-ewhvirggkucgyqblnktzoabzzhyn/GlowTest_Prefix.pch.pth GlowTest_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -g -Wno-sign-conversion -iquote /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/GlowTest-generated-files.hmap -I/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/GlowTest-own-target-headers.hmap -I/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/GlowTest-all-target-headers.hmap -iquote /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/GlowTest-project-headers.hmap -iquote../../../include -iquote../include -I/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/build/Debug/include -I../../../boost -I/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/DerivedSources/i386 -I/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/GlowTest.build/Debug/GlowTest.build/DerivedSources -F/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/build/Debug --serialize-diagnostics /var/folders/rx/5920lwf5777bzm51lrsn28900000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlowTest_Prefix-ewhvirggkucgyqblnktzoabzzhyn/GlowTest_Prefix.pch.dia -c /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/GlowTest_Prefix.pch -o /var/folders/rx/5920lwf5777bzm51lrsn28900000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlowTest_Prefix-ewhvirggkucgyqblnktzoabzzhyn/GlowTest_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/rx/5920lwf5777bzm51lrsn28900000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GlowTest_Prefix-ewhvirggkucgyqblnktzoabzzhyn/GlowTest_Prefix.pch.d36"E82FCB86-CE95-4AFE-94F9-748C3D5E712C-
 
 CTouch /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app
-s375000370.889102
-e375000370.893931
+s375001823.842330
+e375001823.847562
 r1
 xTouch
 x/Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Touch /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app4ca9e3320d5ab641^d3dae4320d5ab641^---0#0#0#--195"Touch ./build/Debug/GlowTest.app    cd /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode    /usr/bin/touch -c /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app36"C46438E6-4B9D-4BFE-B07A-905A777B74C2-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Touch /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app60b0d7df125ab641^1efcd8df125ab641^---0#0#0#--195"Touch ./build/Debug/GlowTest.app    cd /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode    /usr/bin/touch -c /Users/synthresin/Desktop/cinder/apps/GlowTest/xcode/./build/Debug/GlowTest.app36"D2A5337B-ACE4-442B-BEDD-E3A70FB98F8C-
 

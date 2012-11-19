@@ -22,6 +22,7 @@
 		C64CB1C61659F12F00B9C85A /* vert.glsl in Resources */ = {isa = PBXBuildFile; fileRef = C64CB1C51659F12F00B9C85A /* vert.glsl */; };
 		C64CB1C81659F1DA00B9C85A /* frag.glsl in Resources */ = {isa = PBXBuildFile; fileRef = C64CB1C71659F1DA00B9C85A /* frag.glsl */; };
 		C64CB1D21659FD5600B9C85A /* blur.glsl in Resources */ = {isa = PBXBuildFile; fileRef = C64CB1D11659FD5600B9C85A /* blur.glsl */; };
+		C64CB1D8165A110600B9C85A /* multi.glsl in Resources */ = {isa = PBXBuildFile; fileRef = C64CB1D7165A110600B9C85A /* multi.glsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		C64CB1C51659F12F00B9C85A /* vert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vert.glsl; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
 		C64CB1C71659F1DA00B9C85A /* frag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frag.glsl; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
 		C64CB1D11659FD5600B9C85A /* blur.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = blur.glsl; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
+		C64CB1D7165A110600B9C85A /* multi.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = multi.glsl; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				C64CB1C51659F12F00B9C85A /* vert.glsl */,
 				C64CB1C71659F1DA00B9C85A /* frag.glsl */,
 				C64CB1D11659FD5600B9C85A /* blur.glsl */,
+				C64CB1D7165A110600B9C85A /* multi.glsl */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				C64CB1C61659F12F00B9C85A /* vert.glsl in Resources */,
 				C64CB1C81659F1DA00B9C85A /* frag.glsl in Resources */,
 				C64CB1D21659FD5600B9C85A /* blur.glsl in Resources */,
+				C64CB1D8165A110600B9C85A /* multi.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

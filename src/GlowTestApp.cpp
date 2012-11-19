@@ -21,8 +21,10 @@ class GlowTestApp : public AppBasic {
     gl::Fbo mNormalFbo;     // 정상적인 화면 출력을 위한 Fbo
     gl::Fbo mGlowFbo;
     gl::Fbo mBlurFbo;
+    gl::Fbo mMultiplyFbo;
     
     gl::GlslProg    mBlurShader;
+    gl::GlslProg    mMultiShader;
 };
 
 void GlowTestApp::prepareSettings(Settings * settings)
@@ -35,6 +37,7 @@ void GlowTestApp::setup()
     mNormalFbo = gl::Fbo(1280, 720);
     mGlowFbo = gl::Fbo(1280, 720);
     mBlurFbo = gl::Fbo(1280, 720);
+    mMultiplyFbo = gl::Fbo(1280, 720);
     
     try {
         mBlurShader = gl::GlslProg(loadResource("vert.glsl"),loadResource("blur.glsl")); // 셰이더 소스 넣어야함.
@@ -43,6 +46,15 @@ void GlowTestApp::setup()
     } catch (...) {
         std::cout << "unknown error." << std::endl;
     }
+    
+    try {
+        mMultiShader = gl::GlslProg(loadResource("vert.glsl"),loadResource("multi.glsl")); // 셰이더 소스 넣어야함.
+    } catch ( gl::GlslProgCompileExc &exc ) {
+        std::cout << "error : " << exc.what() << std::endl;
+    } catch (...) {
+        std::cout << "unknown error." << std::endl;
+    }
+    
     gl::enableAlphaBlending();
     gl::enableAlphaTest();
 }
@@ -60,7 +72,7 @@ void GlowTestApp::draw()
 	// clear out the window with black
 	
     gl::setMatricesWindowPersp(getWindowSize());
-    gl::clear( Color( 0, 0, 1 ) );
+    gl::clear( Color( 0, 0, 0 ) );
     
     // 일단 Fbo 를 하나 만들어서 그린다. 드로잉 컨텍스트가 완전 새로운게 되는듯? Fbo 에 대해 더 공부해볼 필요가 있당...
     // 뭔가 카메라 설정도 마구마구 해서    
@@ -68,7 +80,9 @@ void GlowTestApp::draw()
     mNormalFbo.bindFramebuffer();
         gl::setMatricesWindowPersp(getWindowSize());
         gl::clear( ColorA(0, 0, 0, 0 ) );
-        gl::drawSphere(Vec3f(200,100, 0), 6.0);
+        gl::color(0.4, 0.2, 0.5);
+        gl::drawSphere(Vec3f(200,100, 0), 50.0);
+        gl::drawSphere(Vec3f(500,100, 0), 50.0);
     mNormalFbo.unbindFramebuffer();
     
     
@@ -81,14 +95,17 @@ void GlowTestApp::draw()
     mGlowFbo.bindFramebuffer();
         gl::setMatricesWindowPersp(getWindowSize());
         gl::clear( ColorA(0, 0, 0, 0 ) );
-        gl::drawSphere(Vec3f(200,100, 0), 6.0);
+        gl::color(0.4, 0.2, 0.5);
+        gl::drawSphere(Vec3f(200,100, 0), 50.0);
+    
+        
     mGlowFbo.unbindFramebuffer();
     
     
     // 텍스쳐 블러시킬 Fbo 를 만든다. 텍스쳐가 정면에 나와야 되니까 카메라 세팅을 신더 기본으로 해준다.
     // 블러 때리는용 Fbo 를 텍스쳐화 시켜 그린다.
-    //mBlurFbo.bindFramebuffer();
-        gl::clear( ColorA(1, 0, 0, 0 ) );
+    mBlurFbo.bindFramebuffer();
+        gl::clear( ColorA(0, 0, 0, 0 ) );
     
         gl::setMatricesWindowPersp(getWindowSize());
     
@@ -100,12 +117,29 @@ void GlowTestApp::draw()
         gl::drawSolidRect( Rectf(0.0, 0.0, getWindowWidth(), getWindowHeight() ) );
         mBlurShader.unbind();
         mGlowFbo.getTexture().unbind();
-    //mBlurFbo.unbindFramebuffer();
+    mBlurFbo.unbindFramebuffer();
+    
+    //  섞어보자.
     
     
+    mMultiplyFbo.bindFramebuffer();
+        gl::clear( ColorA(0, 0, 0, 0 ) );
+        gl::setMatricesWindowPersp(getWindowSize());
+    
+        // 두가지 합칠 소스 가져오기
+        mNormalFbo.getTexture().bind(1);
+        mBlurFbo.getTexture().bind(2);
+    
+    
+        mMultiShader.bind();
+        mMultiShader.uniform("Tex1", 1);
+        mMultiShader.uniform("Tex2", 2);
+        gl::drawSolidRect( Rectf(0.0, 0.0, getWindowWidth(), getWindowHeight() ) );
+        mMultiShader.unbind();
+    mMultiplyFbo.unbindFramebuffer();
     
     // 최종적으로 블러된 Fbo 를 전사한다.
-    //gl::draw(mBlurFbo.getTexture());
+    gl::draw(mMultiplyFbo.getTexture());
     
 
 }
