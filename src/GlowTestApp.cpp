@@ -71,16 +71,15 @@ void GlowTestApp::draw()
 {
 	// clear out the window with black
 	
-    gl::setMatricesWindowPersp(getWindowSize());
     gl::clear( Color( 0, 0, 0 ) );
+    
     
     // 일단 Fbo 를 하나 만들어서 그린다. 드로잉 컨텍스트가 완전 새로운게 되는듯? Fbo 에 대해 더 공부해볼 필요가 있당...
     // 뭔가 카메라 설정도 마구마구 해서    
     
     mNormalFbo.bindFramebuffer();
-        gl::setMatricesWindowPersp(getWindowSize());
         gl::clear( ColorA(0, 0, 0, 0 ) );
-        gl::color(0.4, 0.2, 0.5);
+        gl::color(1.0, 1.0, 1.0);
         gl::drawSphere(Vec3f(200,100, 0), 50.0);
         gl::drawSphere(Vec3f(500,100, 0), 50.0);
     mNormalFbo.unbindFramebuffer();
@@ -139,7 +138,17 @@ void GlowTestApp::draw()
     mMultiplyFbo.unbindFramebuffer();
     
     // 최종적으로 블러된 Fbo 를 전사한다.
-    gl::draw(mMultiplyFbo.getTexture());
+    
+    
+    //gl::draw(mMultiplyFbo.getTexture());
+    
+    
+    // 뒤집힘 해결 테스트
+    
+    gl::drawSphere(Vec3f(200,100, 0), 50.0);
+    gl::drawSphere(Vec3f(500,100, 0), 50.0);
+    
+    gl::draw(mNormalFbo.getTexture());
     
 
 }
